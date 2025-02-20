@@ -7,7 +7,9 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello world"
-      # - name: Intentional Failure
-      #   run: exit 1
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: SCE validator
+      uses: Devx-USC/sce-validator@main
+
