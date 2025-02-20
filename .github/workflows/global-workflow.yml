@@ -12,3 +12,4 @@ jobs:
 
     - name: SCE validator
       uses: Devx-USC/sce-validator@main
+
