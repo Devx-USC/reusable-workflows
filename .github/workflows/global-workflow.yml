@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello world"
-      - name: Intentional Failure
-        run: exit 1
+      # - name: Intentional Failure
+      #   run: exit 1
