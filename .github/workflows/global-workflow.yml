@@ -1,0 +1,11 @@
+---
+name: Global workflow example
+
+on: pull_request
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello World
+        run: echo "Hello world"
