@@ -3,7 +3,7 @@ name: SCE validator global workflow
 on: pull_request
 
 jobs:
-  hello_world:
+  sce-validator:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
