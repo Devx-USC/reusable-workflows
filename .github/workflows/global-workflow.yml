@@ -1,6 +1,5 @@
 ---
-name: Global workflow example
-
+name: SCE validator global workflow
 on: pull_request
 
 jobs:
@@ -9,9 +8,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-
-    - name: Debug github workspace
-      run: ls -lah ${{ github.workspace }}
 
     - name: SCE validator
       uses: Devx-USC/sce-validator@main
