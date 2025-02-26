@@ -10,7 +10,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Debug github workspace
+      run: ls -lah ${{ github.workspace }}
+
     - name: SCE validator
       uses: Devx-USC/sce-validator@main
       with:
         test_sa_key: ${{ secrets.GCP_TEST_SA_KEY }}
+  
