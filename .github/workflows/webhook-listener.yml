@@ -1,8 +1,7 @@
 name: Handle webhook event
 
 on:
-  repository_dispatch:
-    types: [techdocs_update]
+  push:
 
 jobs:
   process-webhook:
@@ -13,4 +12,4 @@ jobs:
 
     - name: Extract event payload
       id: extract_payload
-      run: echo "::set-output name=payload::${{ github.event.client_payload }}"
+      run: echo "test"
