@@ -13,4 +13,7 @@ jobs:
       uses: Devx-USC/sce-validator@main
       with:
         test_sa_key: ${{ secrets.GCP_TEST_SA_KEY }}
-  
+        trigger: ${{ github.event_name }}
+        repository: ${{ github.repository }}
+        owner: ${{ github.repository_owner }}
+        pr_number: ${{ github.event.number }}
