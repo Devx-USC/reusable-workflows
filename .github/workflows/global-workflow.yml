@@ -16,5 +16,4 @@ jobs:
         trigger: ${{ github.event_name }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ github.repository }}
-        repository_owner: ${{ github.repository_owner }}
         pr_number: ${{ github.event.number }}
